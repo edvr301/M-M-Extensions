@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gallary</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="images/MMlogowhite.svg" type="image/svg">
+</head>
+
+
+<body>
+  <nav class="nav-bar">
+    <div class="nav-branding">
+      <a href="index.html"><img src="images/MMlogo.png" alt="Logo">
+      </a>
+    </div>
+    </ul>
+    <ul class="nav-menu">
+      <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li><a class="nav-link" href="ourstory.html">About</a></li>
+      <li><a class="nav-link" href="faq.html">FAQ</a></li>
+      <li><a class="nav-link quote-btn" href="calculator.html">Free Quote</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+<div class="rectangle">
+    <img  src="images/rectangle.svg">
+    <h1>GALLERY</h1>
+</div>
+
+<div class="gallerycontainer">
+  <div class="grid-container">
+
+    <div class="item span-2x2">
+      <p class="itemdetails">Dundrum, Co. Dublin</p>
+  </div>
+  
+   <div class="item item2 span-2x2">
+    <p class="itemdetails">Castleknock, Co. Dublin</p>
+  </div>
+
+  <div class="item item3 span-2x2">
+    <p class="itemdetails itemtext">Naas, Co. Kildare</p>
+  </div>
+  
+   <div class="item item4 span-2x2">
+    <p class="itemdetails">Graystones, Co. Wicklow</p>
+  </div>
+
+  <div class="item item5 span-2x2">
+    <p class="itemdetails">Raheny, Co. Dublin</p>
+  </div>
+  
+   <div class="item item6 span-2x2">
+    <p class="itemdetails">Malahide, Co. Dublin</p>
+  </div>
+
+  </div>
+</div>
+  
+
+<footer>
+  <div class="footerrow">
+  <div class="footercolumn footerpadding">
+    <ul class="footerul">
+        <li class="link_name">Quick Links</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourstory.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="calculator.html">Quote Today</a></li>
+      </ul>
+  </div>
+  
+  <div class="footercolumn">
+    <ul class="footerul">
+        <li class="link_name">Get in Touch</li>
+        <div class="footericons">
+        <img src="images/location.svg" alt="location icon">
+        <p>Dublin, Ireland</p>
+        </div>
+        <div class="footericons">
+        <img src="images/phone.svg" alt="phone icon">
+        <p>087-113-3941</p>
+        </div>
+        <div class="footericons">
+        <img src="images/mail.svg" alt="mail icon">
+        <p>info@mmperfectsolution.ie</p>
+        </div>
+      </ul>
+  </div>
+  
+  <div class="footercolumn">
+   <ul class="footerul">
+        <li class="link_name">Social Media</li>
+        <div class="footericons">
+        <img src="images/facebookOB.svg" alt="facebook icon">
+        <li><a href="#">Facebook</a></li>
+        </div>
+        <div class="footericons">
+        <img src="images/insta.svg" alt="instagram icon">
+        <li><a href="#">Instagram</a></li>
+        </div>
+       <div class="footericons">
+        <img src="images/youtube.svg" alt="youtube icon">
+        <li><a href="#">Youtube</a></li>
+    </div>
+      
+        
+  </ul>
+ </div>
+  
+  <div class="footercolumn">
+    <div class="footerlogo">
+      <img class="footerlogo1" src="images/MMlogowhite.svg" alt="Logo">
+    </div>
+  </div>
+</div>
+<div class="bottom-details">
+      <span class="copyright_text">Copyright © 2021 M&M Extensions. All rights reserved</span>
+      </span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+
+
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    } )
+
+
+  document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click", () =>{
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }))
+       
+</script>
+
+</body>
+</html>
